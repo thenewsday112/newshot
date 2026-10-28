@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<title>Health</title>
+<meta name="description" content="Latest health news">
+<link rel="canonical" href="https://thenewsday112.github.io/newsmenuday/health.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+* { box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--bg-color); margin: 0; padding: 0; color: var(--text-main); line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+header.site-header { background: var(--card-bg); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-size: 24px; font-weight: 800; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+nav.category-nav { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; scrollbar-width: none; }
+nav.category-nav::-webkit-scrollbar { display: none; }
+nav.category-nav a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 20px; white-space: nowrap; transition: all 0.2s; background: var(--bg-color); }
+nav.category-nav a:hover, nav.category-nav a.active { background: var(--primary); color: white; }
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-top: 20px; }
+.news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; border: 1px solid var(--border-color); }
+.news-card:hover { transform: translateY(-4px); box-shadow: 0 12px 20px -5px rgba(0,0,0,0.1); }
+.news-img { width: 100%; height: 180px; object-fit: cover; background: #e2e8f0; display: block; }
+.news-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+.news-meta { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 600; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.badge { background: #eff6ff; color: var(--primary); padding: 4px 10px; border-radius: 20px; }
+.news-title { margin: 0 0 12px 0; font-size: 18px; font-weight: 800; line-height: 1.4; }
+.news-title a { color: var(--text-main); text-decoration: none; }
+.news-title a:hover { color: var(--primary); }
+.news-excerpt { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.read-more { margin-top: auto; font-size: 14px; font-weight: 600; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+.read-more:hover { color: var(--primary-dark); }
+.pagination { display: flex; justify-content: center; gap: 8px; margin: 40px 0; flex-wrap: wrap; }
+.pagination a { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; height: 40px; padding: 0 10px; border-radius: 8px; background: var(--card-bg); color: var(--text-main); text-decoration: none; font-weight: 600; border: 1px solid var(--border-color); transition: all 0.2s; }
+.pagination a:hover, .pagination a.active { background: var(--primary); color: white; border-color: var(--primary); }
+.ad-container { background: var(--card-bg); padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 20px; border: 1px solid var(--border-color); }
+footer { text-align: center; padding: 40px 20px; color: var(--text-muted); border-top: 1px solid var(--border-color); margin-top: 40px; background: var(--card-bg); }
+@media (max-width: 768px) { .header-inner { flex-direction: column; align-items: flex-start; gap: 15px; } nav.category-nav { width: 100%; } }
+</style>
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">📰 News Portal</a>
+    </div>
+    <div class="header-inner" style="padding-top:0;">
+        <nav class="category-nav"><a href="index.html" class="">All News</a><a href="technology.html" class="">Technology</a><a href="business.html" class="">Business</a><a href="sports.html" class="">Sports</a><a href="entertainment.html" class="">Entertainment</a><a href="health.html" class="active">Health</a><a href="other.html" class="">Other</a></nav>
+    </div>
+</header>
+<div class="container">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;"><h1 style="font-size:28px; font-weight:800; margin:0;">Health</h1></div><div class="ad-container">
+<div style="text-align:center;margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+</div><div class="news-grid">
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/clogged-ear-remedy" target="_blank" rel="nofollow">Say What? 7 Tips to Unclog Your Blocked Ears</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/clogged-ear-remedy" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/hickey-stages" target="_blank" rel="nofollow">Hickey Stages: Understanding and Managing Love Bites Effectively</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/hickey-stages" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/healthy/how-to-get-rid-of-mosquito-bites-overnight" target="_blank" rel="nofollow">Bye-Bye Bites: 14 Ways to Get Rid of Mosquito Bites Overnight</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/healthy/how-to-get-rid-of-mosquito-bites-overnight" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/how-to-heal-cracked-lip-corners-fast" target="_blank" rel="nofollow">Pucker Up! How to Heal Cracked Lip Corners Fast</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/how-to-heal-cracked-lip-corners-fast" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/dark-green-poop" target="_blank" rel="nofollow">What Does Dark Green Poop Mean? Causes, Diet, and When to See a Doctor</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/dark-green-poop" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/how-to-use-jojoba-oil-for-hair" target="_blank" rel="nofollow">How to Use Jojoba Oil for Hair: Expert Tips for Stunning Results</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/how-to-use-jojoba-oil-for-hair" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/signs-skin-needs-medical-attention" target="_blank" rel="nofollow">6 Signs Your Skin Needs Medical Attention, Stat</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/signs-skin-needs-medical-attention" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/production-notes-test" target="_blank" rel="nofollow">production notes test</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/production-notes-test" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/grt-test-noom-med-epm" target="_blank" rel="nofollow">GRT test noom med epm</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/grt-test-noom-med-epm" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/grt-noom-med-epm-test-template" target="_blank" rel="nofollow">GRT noom med epm test template</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/grt-noom-med-epm-test-template" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/test-sponsor" target="_blank" rel="nofollow">Test sponsor</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/test-sponsor" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/care-validate-1" target="_blank" rel="nofollow">care validate epm - version 1</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/care-validate-1" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/aerobic-exercise-brain-health-postmenopausal-women" target="_blank" rel="nofollow">Aerobic Exercise May Improve Brain Health in Postmenopausal Women</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/aerobic-exercise-brain-health-postmenopausal-women" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/providers/bon-secours-mercy-health-acquire-majority-stake-surgery-partners" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/providers/bon-secours-mercy-health-acquire-majority-stake-surgery-partners&quot; hreflang=&quot;en&quot;&gt;Bon Secours Mercy Health to acquire majority stake in Surgery Partners in $5.7B deal&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.fiercehealthcare.com/providers/bon-secours-mercy-health-acquire-majority-stake-surgery-partners" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/fiercepharma/1645636179/GettyImages-1219772142.jpg/GettyImages-1219772142.jpg?VersionId=DCKdcoBBdTWZzQGgMPKRDdFzCtrdBGGE" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/payers/judge-rejects-nc-state-health-plans-request-block-atrium-affordability-program&quot; hreflang=&quot;en&quot;&gt;Atrium Health, NC State Health Plan reach deal in preferred provider network dispute&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>28 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/payers/judge-rejects-nc-state-health-plans-request-block-atrium-affordability-program" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/payers/judge-rejects-nc-state-health-plans-request-block-atrium-affordability-program&quot; hreflang=&quot;en&quot;&gt;Atrium Health, NC State Health Plan reach deal in preferred provider network dispute&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">Atrium Health, NC State Health Plan reach deal in preferred provider network dispute&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=...</p>
+            <a href="https://www.fiercehealthcare.com/payers/judge-rejects-nc-state-health-plans-request-block-atrium-affordability-program" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2066520601_facebook_1200x630-1200x628.jpg" class="news-img" alt="6 to 8 Cups of Tea Daily May Reduce Heart Disease Risk by 11%" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>28 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/drinking-tea-daily-reduce-heart-disease-risk" target="_blank" rel="nofollow">6 to 8 Cups of Tea Daily May Reduce Heart Disease Risk by 11%</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/drinking-tea-daily-reduce-heart-disease-risk" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/Featured%20Images%20-%20Fierce%20Healthcare%20-%202025-08-20T124100.924.jpg?VersionId=TrIrydFkr_4JJtjlptrNdK3vPXgDEc6." class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/payers/alignment-healthcare-sues-cms-over-its-2027-medicare-advantage-star-ratings&quot; hreflang=&quot;en&quot;&gt;Aetna sues to challenge 2027 MA star ratings&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>27 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/payers/alignment-healthcare-sues-cms-over-its-2027-medicare-advantage-star-ratings" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/payers/alignment-healthcare-sues-cms-over-its-2027-medicare-advantage-star-ratings&quot; hreflang=&quot;en&quot;&gt;Aetna sues to challenge 2027 MA star ratings&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">Aetna sues to challenge 2027 MA star ratings&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy&quot;&gt;                            atOpt...</p>
+            <a href="https://www.fiercehealthcare.com/payers/alignment-healthcare-sues-cms-over-its-2027-medicare-advantage-star-ratings" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/fiercehealthcare/1643301658/parallon-office-1.jpg/parallon-office-1.jpg?VersionId=5CzI7z_n32r8URebp8ZxmGcrVen7hWZx" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/providers/hca-healthcare-tops-q3-expectations-strong-demand-warns-persistent-payer-mix-issues&quot; hreflang=&quot;en&quot;&gt;HCA Healthcare tops Q3 expectations on strong demand, but warns of persistent payer mix issues&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>27 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/providers/hca-healthcare-tops-q3-expectations-strong-demand-warns-persistent-payer-mix-issues" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/providers/hca-healthcare-tops-q3-expectations-strong-demand-warns-persistent-payer-mix-issues&quot; hreflang=&quot;en&quot;&gt;HCA Healthcare tops Q3 expectations on strong demand, but warns of persistent payer mix issues&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">HCA Healthcare tops Q3 expectations on strong demand, but warns of persistent payer mix issues&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;...</p>
+            <a href="https://www.fiercehealthcare.com/providers/hca-healthcare-tops-q3-expectations-strong-demand-warns-persistent-payer-mix-issues" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/Featured%20Images%20-%20Fierce%20Healthcare%20-%202024-12-18T124048.388.jpg?VersionId=f96roXX6whlbhoOrOzAqmanxiryr55yU" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/payers/democratic-senators-probe-insurers-role-canceling-aca-coverage-760k&quot; hreflang=&quot;en&quot;&gt;Democratic senators probe insurers&#x27; role in canceling ACA coverage for 760K&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>27 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/payers/democratic-senators-probe-insurers-role-canceling-aca-coverage-760k" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/payers/democratic-senators-probe-insurers-role-canceling-aca-coverage-760k&quot; hreflang=&quot;en&quot;&gt;Democratic senators probe insurers&#x27; role in canceling ACA coverage for 760K&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">Democratic senators probe insurers&#x27; role in canceling ACA coverage for 760K&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy&quot;&gt;  ...</p>
+            <a href="https://www.fiercehealthcare.com/payers/democratic-senators-probe-insurers-role-canceling-aca-coverage-760k" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2158507157_facebook_1200x630-1200x628.jpg" class="news-img" alt="Healthgrades Announces Top Hospitals for Specialty Care, Outpatient Procedures" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>27 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/healthgrades-2027-top-hospitals-specialty-care-outpatient-procedures" target="_blank" rel="nofollow">Healthgrades Announces Top Hospitals for Specialty Care, Outpatient Procedures</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/healthgrades-2027-top-hospitals-specialty-care-outpatient-procedures" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-1407551386.jpg?VersionId=R2nJnSNhIYsxgGe7tug2biS4WOBLrdzm" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/providers/hhs-calls-hospitals-sign-make-hospital-food-healthier-pledge&quot; hreflang=&quot;en&quot;&gt;Over 250 hospitals sign HHS&#x27; voluntary &#x27;Make Hospital Food Healthier Pledge&#x27;&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>27 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/providers/hhs-calls-hospitals-sign-make-hospital-food-healthier-pledge" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/providers/hhs-calls-hospitals-sign-make-hospital-food-healthier-pledge&quot; hreflang=&quot;en&quot;&gt;Over 250 hospitals sign HHS&#x27; voluntary &#x27;Make Hospital Food Healthier Pledge&#x27;&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">Over 250 hospitals sign HHS&#x27; voluntary &#x27;Make Hospital Food Healthier Pledge&#x27;&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy&quot;&gt; ...</p>
+            <a href="https://www.fiercehealthcare.com/providers/hhs-calls-hospitals-sign-make-hospital-food-healthier-pledge" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2189800913_facebook_1200x630-1200x628.jpg" class="news-img" alt="Hormone Therapy May Boost Weight Loss on Wegovy, But Not as Much on Zepbound" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>26 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/hormone-therapy-may-boost-weight-loss-wegovy-not-as-much-zepbound" target="_blank" rel="nofollow">Hormone Therapy May Boost Weight Loss on Wegovy, But Not as Much on Zepbound</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/hormone-therapy-may-boost-weight-loss-wegovy-not-as-much-zepbound" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/DeconDana_facebook_1200x630-5-1200x628.jpg" class="news-img" alt="How This Former Weightlifter Lost 80 Pounds After GLP-1s Stopped Working" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>25 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/former-weightlifter-weight-loss-after-glp1" target="_blank" rel="nofollow">How This Former Weightlifter Lost 80 Pounds After GLP-1s Stopped Working</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/former-weightlifter-weight-loss-after-glp1" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2297912851_facebook_1200x630-1200x628.jpg" class="news-img" alt="Getting More Physical Activity May Help With Your Perimenopause Symptoms" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>24 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/higher-physical-activity-improves-perimenopause-symptoms" target="_blank" rel="nofollow">Getting More Physical Activity May Help With Your Perimenopause Symptoms</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/higher-physical-activity-improves-perimenopause-symptoms" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2288540552_facebook_1200x630-1200x628.jpg" class="news-img" alt="ADHD Medications May Help Ease Menopausal Brain Fog" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>23 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/adhd-medications-may-help-ease-menopausal-brain-fog" target="_blank" rel="nofollow">ADHD Medications May Help Ease Menopausal Brain Fog</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/adhd-medications-may-help-ease-menopausal-brain-fog" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2160594360_facebook_1200x630-1200x628.jpg" class="news-img" alt="Why Living with Endometriosis May Double Your Odds of Migraine" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>22 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/women-with-endometriosis-more-likely-to-experience-migraine" target="_blank" rel="nofollow">Why Living with Endometriosis May Double Your Odds of Migraine</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/women-with-endometriosis-more-likely-to-experience-migraine" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/rfk_vaccine_schedule-facebook-1200x630-1-1200x628.jpg" class="news-img" alt="RFK Jr.’s Revised Vaccine Schedule May Cause 83% Surge in Hepatitis B Infections" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>21 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/rfk-jr-vaccine-schedule-changes-may-cause-surge-hepatitis-b" target="_blank" rel="nofollow">RFK Jr.’s Revised Vaccine Schedule May Cause 83% Surge in Hepatitis B Infections</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/rfk-jr-vaccine-schedule-changes-may-cause-surge-hepatitis-b" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/Christina_Applegate_MS_misdiagnosis-facebook-1200x630-1-1200x628.jpg" class="news-img" alt="Christina Applegate ‘Not Happy at All’ After Learning She Was Misdiagnosed With MS" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>20 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/christina-applegate-reveals-misdiagnosed-ms" target="_blank" rel="nofollow">Christina Applegate ‘Not Happy at All’ After Learning She Was Misdiagnosed With MS</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/christina-applegate-reveals-misdiagnosed-ms" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2172967782_facebook_1200x630-1200x628.jpg" class="news-img" alt="ACOG Strongly Recommends Hormone Therapy for Menopause Symptoms" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>20 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/acog-strongly-recommends-hormone-therapy-menopause-symptoms" target="_blank" rel="nofollow">ACOG Strongly Recommends Hormone Therapy for Menopause Symptoms</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/acog-strongly-recommends-hormone-therapy-menopause-symptoms" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_1942035162_facebook_1200x630-1200x628.jpg" class="news-img" alt="A Handful of Pistachios May Help You Sleep Better, Review Says" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>19 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/pistachios-may-support-sleep-review-finds" target="_blank" rel="nofollow">A Handful of Pistachios May Help You Sleep Better, Review Says</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/pistachios-may-support-sleep-review-finds" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_1835501914_facebook_1200x630-1200x628.jpg" class="news-img" alt="Ultra-Processed Food Intake May Increase Dementia, Stroke Risk" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>18 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/ultra-processed-food-intake-linked-to-higher-dementia-stroke-risk" target="_blank" rel="nofollow">Ultra-Processed Food Intake May Increase Dementia, Stroke Risk</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/ultra-processed-food-intake-linked-to-higher-dementia-stroke-risk" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_1278449921_facebook_1200x630-1200x628.jpg" class="news-img" alt="Walking, Yoga, or Zumba? Which Exercises Help Relieve Menopause Mood Symptoms" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>17 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/physical-activity-may-improve-mood-and-quality-of-life-during-menopause" target="_blank" rel="nofollow">Walking, Yoga, or Zumba? Which Exercises Help Relieve Menopause Mood Symptoms</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/physical-activity-may-improve-mood-and-quality-of-life-during-menopause" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2170649592_thumb_732x549-1.jpg" class="news-img" alt="Women With Autoimmune Diseases More Likely to Be Misdiagnosed Than Men" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>16 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/women-with-autoimmune-diseases-often-misdiagnosed" target="_blank" rel="nofollow">Women With Autoimmune Diseases More Likely to Be Misdiagnosed Than Men</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/women-with-autoimmune-diseases-often-misdiagnosed" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_1447398955_facebook_1200x630-1200x628.jpg" class="news-img" alt="Ultra-Processed Food Intake May Not Be Linked to Colorectal Cancer" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>15 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/ultra-processed-food-intake-not-linked-colorectal-cancer-study" target="_blank" rel="nofollow">Ultra-Processed Food Intake May Not Be Linked to Colorectal Cancer</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/ultra-processed-food-intake-not-linked-colorectal-cancer-study" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/pope_leo-facebook-1200x630-1-1200x628.jpg" class="news-img" alt="Pope Leo XIV Diagnosed With Lung Cancer After Surgery to Remove Part of Lung" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>14 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/pope-leo-diagnosed-with-lung-cancer" target="_blank" rel="nofollow">Pope Leo XIV Diagnosed With Lung Cancer After Surgery to Remove Part of Lung</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/pope-leo-diagnosed-with-lung-cancer" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/Disability_Activist_RJ_Mitte-facebook-1200x630-1-1200x628.jpg" class="news-img" alt="RJ Mitte&#x27;s Death Highlights Mental Health Challenges for People With Cerebral Palsy" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>13 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/rj-mitte-breaking-bad-death-cerebral-palsy-mental-health" target="_blank" rel="nofollow">RJ Mitte&#x27;s Death Highlights Mental Health Challenges for People With Cerebral Palsy</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/rj-mitte-breaking-bad-death-cerebral-palsy-mental-health" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_1958406898_facebook_1200x630-1200x628.jpg" class="news-img" alt="PMOS, Formerly PCOS, May Be Associated with Alzheimer&#x27;s Disease Risk" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>13 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/pmos-pcos-may-be-associated-alzheimers-disease-risk" target="_blank" rel="nofollow">PMOS, Formerly PCOS, May Be Associated with Alzheimer&#x27;s Disease Risk</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/pmos-pcos-may-be-associated-alzheimers-disease-risk" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/viola_davis_facebook_1200x630-1200x628.jpg" class="news-img" alt="Viola Davis Says Shingles Pain Was a ‘9 Out of 10’: How It Changed Her Life" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>12 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/viola-davis-shingles-pain-changed-life" target="_blank" rel="nofollow">Viola Davis Says Shingles Pain Was a ‘9 Out of 10’: How It Changed Her Life</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/viola-davis-shingles-pain-changed-life" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_1193707801_facebook_1200x630-1200x628.jpg" class="news-img" alt="Heart Failure Is Becoming More Common in Adults Under 65, Report Finds" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>12 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/heart-failure-become-more-common-adults-under-65-report-finds" target="_blank" rel="nofollow">Heart Failure Is Becoming More Common in Adults Under 65, Report Finds</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/heart-failure-become-more-common-adults-under-65-report-finds" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_1463531237_facebook_1200x630-1200x628.jpg" class="news-img" alt="Hormone Therapy May Help Improve Menopause Brain Fog, Mood Changes" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>11 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/hormone-therapy-may-improve-brain-fog-mood-changes-menopause" target="_blank" rel="nofollow">Hormone Therapy May Help Improve Menopause Brain Fog, Mood Changes</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/hormone-therapy-may-improve-brain-fog-mood-changes-menopause" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_1872097196_facebook_1200x630-1200x628.jpg" class="news-img" alt="Taking Blood Pressure Meds? DASH Diet Likely Safe for Potassium Levels" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>08 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/potassium-rich-dash-diet-safe-with-certain-blood-pressure-medications" target="_blank" rel="nofollow">Taking Blood Pressure Meds? DASH Diet Likely Safe for Potassium Levels</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/potassium-rich-dash-diet-safe-with-certain-blood-pressure-medications" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/glp1_detached_fingernails-facebook-1200x630-1-1200x628.jpg" class="news-img" alt="Detached Nails More Than 4 Times Higher Among GLP-1 Users, Study Finds" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>07 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/detached-fingernails-hair-loss-glp-1-side-effects" target="_blank" rel="nofollow">Detached Nails More Than 4 Times Higher Among GLP-1 Users, Study Finds</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/detached-fingernails-hair-loss-glp-1-side-effects" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_1309890100_facebook_1200x630-1200x628.jpg" class="news-img" alt="Switching from GLP-1 Injections to Wegovy Pill Shows Additional Weight Loss of 4.1%" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>06 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/switching-from-glp-1-injections-wegovy-pill-greater-weight-loss" target="_blank" rel="nofollow">Switching from GLP-1 Injections to Wegovy Pill Shows Additional Weight Loss of 4.1%</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/switching-from-glp-1-injections-wegovy-pill-greater-weight-loss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/04/hl-news-foundayo-facebook-1200x628-1-1200x628.jpg" class="news-img" alt="Oral GLP-1 Orforglipron (Foundayo) Achieves Weight Loss for Women of All Ages" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>06 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/oral-glp-1-orforglipron-foundayo-uniform-weight-loss-women" target="_blank" rel="nofollow">Oral GLP-1 Orforglipron (Foundayo) Achieves Weight Loss for Women of All Ages</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/oral-glp-1-orforglipron-foundayo-uniform-weight-loss-women" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2286508296_facebook_1200x630-1200x628.jpg" class="news-img" alt="Increasing Ozempic Dose Linked to Lower Heart Risk Than Switching to Mounjaro" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>05 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/increase-ozempic-dose-lower-heart-events-mounjaro" target="_blank" rel="nofollow">Increasing Ozempic Dose Linked to Lower Heart Risk Than Switching to Mounjaro</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/increase-ozempic-dose-lower-heart-events-mounjaro" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_1262304130_facebook_1200x630-1200x628.jpg" class="news-img" alt="Cutting Back on Ultra-Processed Foods May Help Ease Depression Symptoms" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>03 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/cutting-back-ultra-processed-foods-may-help-depression-symptoms" target="_blank" rel="nofollow">Cutting Back on Ultra-Processed Foods May Help Ease Depression Symptoms</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/cutting-back-ultra-processed-foods-may-help-depression-symptoms" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/blood_pressure_med_recall-facebook_1200x630-1200x628.jpg" class="news-img" alt="FDA Issues Class II Blood Pressure Medication Recall, Over 13,000 Bottles Affected" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>02 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/blood-pressure-medication-nationwide-recall-fda" target="_blank" rel="nofollow">FDA Issues Class II Blood Pressure Medication Recall, Over 13,000 Bottles Affected</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/blood-pressure-medication-nationwide-recall-fda" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_1444508157_facebook_1200x630-1200x628.jpg" class="news-img" alt="Low-Energy Diet Plus Structured Exercise Reverses Early Onset Diabetes" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>01 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/low-energy-diet-exercise-reverses-early-onset-type-2-diabetes" target="_blank" rel="nofollow">Low-Energy Diet Plus Structured Exercise Reverses Early Onset Diabetes</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/low-energy-diet-exercise-reverses-early-onset-type-2-diabetes" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_1483802366_facebook_1200x630-1200x628.jpg" class="news-img" alt="Wall Squats, Planks Once a Week May Help Lower Your Blood Pressure" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>01 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/weekly-session-isometric-exercise-may-lower-blood-pressure" target="_blank" rel="nofollow">Wall Squats, Planks Once a Week May Help Lower Your Blood Pressure</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/weekly-session-isometric-exercise-may-lower-blood-pressure" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/09/getty_1353572535_facebook_1200x630-1200x628.jpg" class="news-img" alt="Insomnia Isn’t Just Exhausting — It May Raise Your Risk of Stroke, Dementia" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>30 Sep 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/insomnia-may-raise-risk-stroke-dementia" target="_blank" rel="nofollow">Insomnia Isn’t Just Exhausting — It May Raise Your Risk of Stroke, Dementia</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/insomnia-may-raise-risk-stroke-dementia" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/09/getty_1421320757_facebook_1200x630-1200x628.jpg" class="news-img" alt="8-Hour Time-Restricted Eating Window May Lead to Greater Weight Loss" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>30 Sep 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/8-hour-time-restricted-eating-window-greater-weight-loss" target="_blank" rel="nofollow">8-Hour Time-Restricted Eating Window May Lead to Greater Weight Loss</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/8-hour-time-restricted-eating-window-greater-weight-loss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/09/Simone_Biles_facebook_1200x630-1200x628.jpg" class="news-img" alt="Simone Biles Thought Her Itchy, Flaky Scalp Was Dandruff. It Was Eczema" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Sep 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/simone-biles-routine-manage-eczema" target="_blank" rel="nofollow">Simone Biles Thought Her Itchy, Flaky Scalp Was Dandruff. It Was Eczema</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/simone-biles-routine-manage-eczema" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/09/getty_2175724939_facebook_1200x630-1200x628.jpg" class="news-img" alt="Ultra-Processed Foods Linked to Higher Risk of Multiple Diseases, Death" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>28 Sep 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/ultra-processed-higher-risk-multiple-diseases-death" target="_blank" rel="nofollow">Ultra-Processed Foods Linked to Higher Risk of Multiple Diseases, Death</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/ultra-processed-higher-risk-multiple-diseases-death" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://assets.greatist.com/content/gr8_sharing.jpg" class="news-img" alt="The Best CBD THC Gummies for 2026" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>28 Sep 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/thc-gummies" target="_blank" rel="nofollow">The Best CBD THC Gummies for 2026</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/thc-gummies" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/09/getty_1395197486_facebook_1200x630-1200x628.jpg" class="news-img" alt="Women With Enlarged Breasts More Likely to Experience Migraine, Sleep Apnea" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>24 Sep 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/enlarged-breasts-higher-risk-migraine-neck-pain-sleep-apnea" target="_blank" rel="nofollow">Women With Enlarged Breasts More Likely to Experience Migraine, Sleep Apnea</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/enlarged-breasts-higher-risk-migraine-neck-pain-sleep-apnea" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/09/FDA_Oral_Pill_Breast_Cancer-facebook-1200x630-1-1200x628.jpg" class="news-img" alt="FDA Approves Lilly’s New Oral Combo Pill for Common Breast Cancer Mutation" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>23 Sep 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/fda-approves-eli-lilly-oral-combo-drug-common-breast-cancer-mutation" target="_blank" rel="nofollow">FDA Approves Lilly’s New Oral Combo Pill for Common Breast Cancer Mutation</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/fda-approves-eli-lilly-oral-combo-drug-common-breast-cancer-mutation" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/09/getty_1807906956_facebook_1200x630-1200x628.jpg" class="news-img" alt="Testosterone Prescriptions for Women Surge Amid Pharmacy Access Barriers" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>22 Sep 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/testosterone-prescriptions-for-women-surge-amid-pharmacy-access-barriers" target="_blank" rel="nofollow">Testosterone Prescriptions for Women Surge Amid Pharmacy Access Barriers</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/testosterone-prescriptions-for-women-surge-amid-pharmacy-access-barriers" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/09/maria_shriver_facebook_1200x630-1200x628.jpg" class="news-img" alt="Think You’re Too Young to Worry About Alzheimer’s? Maria Shriver Says Think Again" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>20 Sep 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/maria-shriver-alzheimers-disease-awareness" target="_blank" rel="nofollow">Think You’re Too Young to Worry About Alzheimer’s? Maria Shriver Says Think Again</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/maria-shriver-alzheimers-disease-awareness" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://assets.greatist.com/content/gr8_sharing.jpg" class="news-img" alt="noom weight epm" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>02 Apr 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/noom" target="_blank" rel="nofollow">noom weight epm</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/noom" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://assets.greatist.com/content/gr8_sharing.jpg" class="news-img" alt="GRT test best greens powder tpm 4" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>27 Jan 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/grt-test-best-greens-powder-tpm-4" target="_blank" rel="nofollow">GRT test best greens powder tpm 4</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/grt-test-best-greens-powder-tpm-4" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2025/02/GRt-female-with-acne-smiling-732x549-thumb.jpg" class="news-img" alt="7 Common Misdiagnoses for Hidradenitis Suppurativa (HS)" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>14 Feb 2025</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/common-misdiagnoses-for-hidradenitis-suppurativa" target="_blank" rel="nofollow">7 Common Misdiagnoses for Hidradenitis Suppurativa (HS)</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/common-misdiagnoses-for-hidradenitis-suppurativa" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/08/GRT-female-armpit-1200x628-facebook-1.jpg" class="news-img" alt="Deodorant Armpit Rash: Causes, Prevention, and Treatment" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>31 Aug 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/deodorant-armpit-rash" target="_blank" rel="nofollow">Deodorant Armpit Rash: Causes, Prevention, and Treatment</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/deodorant-armpit-rash" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/08/GRT-white-pills-variety-1200x628-facebook.jpg" class="news-img" alt="Does Magnesium Help You Lose Belly Fat?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>31 Aug 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/does-magnesium-help-you-lose-belly-fat" target="_blank" rel="nofollow">Does Magnesium Help You Lose Belly Fat?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/does-magnesium-help-you-lose-belly-fat" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/08/GRT-female-running-732x549-thumb.jpg" class="news-img" alt="Why Does My Side Hurt When I Run? Causes and Prevention Tips" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>31 Aug 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/why-does-my-side-hurt-when-i-run" target="_blank" rel="nofollow">Why Does My Side Hurt When I Run? Causes and Prevention Tips</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/why-does-my-side-hurt-when-i-run" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/08/Female_Nose_Mirror-1200x628-Facebook.jpg" class="news-img" alt="Bumps Inside Nose: Common Causes and Top Treatments" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>31 Aug 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/bumps-inside-nose" target="_blank" rel="nofollow">Bumps Inside Nose: Common Causes and Top Treatments</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/bumps-inside-nose" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/08/GRT-female-laying-on-couch-sick-1200x628-facebook.jpg" class="news-img" alt="Starvation Mode: How Caloric Restriction Affects Your Body" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>31 Aug 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/starvation-mode" target="_blank" rel="nofollow">Starvation Mode: How Caloric Restriction Affects Your Body</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/starvation-mode" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/08/GRT-female-back-extension-yoga-1296x728-header-1200x628.jpg" class="news-img" alt="Yoga and Overweight: Health Benefits and Tips for Getting Started" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>31 Aug 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/yoga-and-overweight" target="_blank" rel="nofollow">Yoga and Overweight: Health Benefits and Tips for Getting Started</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/yoga-and-overweight" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/07/Female_Curly_Hair-1200x628-Facebook.jpg" class="news-img" alt="Ultimate Guide to 4A Hair: Care Tips, Styles, and Maintenance" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>02 Aug 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/discover/4a-hair" target="_blank" rel="nofollow">Ultimate Guide to 4A Hair: Care Tips, Styles, and Maintenance</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/discover/4a-hair" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/07/Nopales_Prickly_Pear_Cactus-1200x628-Facebook.jpg" class="news-img" alt="Nopales Benefits: Why You Might Add Cactus to Your Diet" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>02 Aug 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/benefits-of-nopales" target="_blank" rel="nofollow">Nopales Benefits: Why You Might Add Cactus to Your Diet</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/benefits-of-nopales" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/07/GRT-female-hair-looking-in-bathroom-mirror-hand-on-neck-1200x628-facebook.jpg" class="news-img" alt="Extra Skin? 9 Exercises for A Sagging Neck" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>02 Aug 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/exercise-for-sagging-neck" target="_blank" rel="nofollow">Extra Skin? 9 Exercises for A Sagging Neck</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/exercise-for-sagging-neck" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/07/Thai_Massage_Leg-1200x628-Facebook.jpg" class="news-img" alt="Thai Massage Therapy: Benefits and What to Expect" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>31 Jul 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/thai-massage-therapy" target="_blank" rel="nofollow">Thai Massage Therapy: Benefits and What to Expect</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/thai-massage-therapy" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/07/Serum_Face_Female-1200x628-Facebook.jpg" class="news-img" alt="Skin in the Game: Is Adapalene or Salicylic Acid Better for Acne?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>31 Jul 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/adapalene-vs-salicylic-acid" target="_blank" rel="nofollow">Skin in the Game: Is Adapalene or Salicylic Acid Better for Acne?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/adapalene-vs-salicylic-acid" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/06/636276-benefits-of-l-tyrosine-1200x628-Facebook.jpg" class="news-img" alt="L-Tyrosine Supplements: Benefits for Your Brain and Body" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>05 Jul 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/benefits-of-l-tyrosine" target="_blank" rel="nofollow">L-Tyrosine Supplements: Benefits for Your Brain and Body</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/benefits-of-l-tyrosine" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/06/GRT-108998-6_Things_You_Can_Do_To_Tame_Your_Farts-1200x628-facebook.jpg" class="news-img" alt="Toot Toot! 6 Tips to Prevent Protein Farts" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>30 Jun 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/protein-farts" target="_blank" rel="nofollow">Toot Toot! 6 Tips to Prevent Protein Farts</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/protein-farts" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/06/635453-Whats-the-Link-Between-Anxiety-and-Ink_-1200x628-Facebook.jpg" class="news-img" alt="Does Creatine Increase DHT? What You Need to Know" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>09 Jun 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/creatine-dht" target="_blank" rel="nofollow">Does Creatine Increase DHT? What You Need to Know</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/creatine-dht" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/06/635453Whats-the-Link-Between-Anxiety-and-Ink_-732x549-thumbnail.jpg" class="news-img" alt="Anxiety Tattoos: How Ink Therapy Can Help Ease Mental Health Struggles" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>03 Jun 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/discover/anxiety-and-tattoos" target="_blank" rel="nofollow">Anxiety Tattoos: How Ink Therapy Can Help Ease Mental Health Struggles</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/discover/anxiety-and-tattoos" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article></div><footer>&copy; 2026 News Portal. All rights reserved.</footer>
+</div></body></html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<title>Technology</title>
+<meta name="description" content="Latest technology news">
+<link rel="canonical" href="https://thenewsday112.github.io/newsmenuday/technology.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+* { box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--bg-color); margin: 0; padding: 0; color: var(--text-main); line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+header.site-header { background: var(--card-bg); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-size: 24px; font-weight: 800; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+nav.category-nav { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; scrollbar-width: none; }
+nav.category-nav::-webkit-scrollbar { display: none; }
+nav.category-nav a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 20px; white-space: nowrap; transition: all 0.2s; background: var(--bg-color); }
+nav.category-nav a:hover, nav.category-nav a.active { background: var(--primary); color: white; }
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-top: 20px; }
+.news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; border: 1px solid var(--border-color); }
+.news-card:hover { transform: translateY(-4px); box-shadow: 0 12px 20px -5px rgba(0,0,0,0.1); }
+.news-img { width: 100%; height: 180px; object-fit: cover; background: #e2e8f0; display: block; }
+.news-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+.news-meta { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 600; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.badge { background: #eff6ff; color: var(--primary); padding: 4px 10px; border-radius: 20px; }
+.news-title { margin: 0 0 12px 0; font-size: 18px; font-weight: 800; line-height: 1.4; }
+.news-title a { color: var(--text-main); text-decoration: none; }
+.news-title a:hover { color: var(--primary); }
+.news-excerpt { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.read-more { margin-top: auto; font-size: 14px; font-weight: 600; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+.read-more:hover { color: var(--primary-dark); }
+.pagination { display: flex; justify-content: center; gap: 8px; margin: 40px 0; flex-wrap: wrap; }
+.pagination a { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; height: 40px; padding: 0 10px; border-radius: 8px; background: var(--card-bg); color: var(--text-main); text-decoration: none; font-weight: 600; border: 1px solid var(--border-color); transition: all 0.2s; }
+.pagination a:hover, .pagination a.active { background: var(--primary); color: white; border-color: var(--primary); }
+.ad-container { background: var(--card-bg); padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 20px; border: 1px solid var(--border-color); }
+footer { text-align: center; padding: 40px 20px; color: var(--text-muted); border-top: 1px solid var(--border-color); margin-top: 40px; background: var(--card-bg); }
+@media (max-width: 768px) { .header-inner { flex-direction: column; align-items: flex-start; gap: 15px; } nav.category-nav { width: 100%; } }
+</style>
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">📰 News Portal</a>
+    </div>
+    <div class="header-inner" style="padding-top:0;">
+        <nav class="category-nav"><a href="index.html" class="">All News</a><a href="technology.html" class="active">Technology</a><a href="business.html" class="">Business</a><a href="sports.html" class="">Sports</a><a href="entertainment.html" class="">Entertainment</a><a href="health.html" class="">Health</a><a href="other.html" class="">Other</a></nav>
+    </div>
+</header>
+<div class="container">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;"><h1 style="font-size:28px; font-weight:800; margin:0;">Technology</h1></div><div class="ad-container">
+<div style="text-align:center;margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+</div><div class="news-grid">
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_c5igf5c5ig.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="ML Drift: Next-Gen GPU AI/ML Inference at the Edge" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/ml-drift-next-gen-gpu-aiml-inference-at-the-edge/" target="_blank" rel="nofollow">ML Drift: Next-Gen GPU AI/ML Inference at the Edge</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/ml-drift-next-gen-gpu-aiml-inference-at-the-edge/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/argon__robotics__hero.2e16d0ba.fill-1200x600.png" class="news-img" alt="Gemini 4 Argon for Robotics" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/gemini-4-argon-for-robotics/" target="_blank" rel="nofollow">Gemini 4 Argon for Robotics</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/gemini-4-argon-for-robotics/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_le2f6yle2f.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon/" target="_blank" rel="nofollow">Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_bib6g3bib6.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster/" target="_blank" rel="nofollow">Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_s1iz7fs1iz.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Announcing DPoP Support for Google OAuth: Securing Refresh Tokens" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/announcing-dpop-support-for-google-oauth-securing-refresh-tokens/" target="_blank" rel="nofollow">Announcing DPoP Support for Google OAuth: Securing Refresh Tokens</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/announcing-dpop-support-for-google-oauth-securing-refresh-tokens/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/evaluating-ai-agents-banner-1600x.2e16d0ba.fill-1200x600.png" class="news-img" alt="Evaluating AI agents: moving past the vibe check" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/" target="_blank" rel="nofollow">Evaluating AI agents: moving past the vibe check</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/1_1.2e16d0ba.fill-1200x600.png" class="news-img" alt="Three layers, one repo: a tour of google/adk-recipes" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/three-layers-one-repo-a-tour-of-googleadk-recipes/" target="_blank" rel="nofollow">Three layers, one repo: a tour of google/adk-recipes</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/three-layers-one-repo-a-tour-of-googleadk-recipes/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_bguxwvbgux.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Native Model Authoring for Edge with LiteRT Tensor API" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/native-model-authoring-for-edge-with-litert-tensor-api/" target="_blank" rel="nofollow">Native Model Authoring for Edge with LiteRT Tensor API</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/native-model-authoring-for-edge-with-litert-tensor-api/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/option4_minimal_flow_diagram_1600.2e16d0ba.fill-1200x600.png" class="news-img" alt="Step by Step guide: Build a Voice Agent That Never Goes Silent using ADK" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk/" target="_blank" rel="nofollow">Step by Step guide: Build a Voice Agent That Never Goes Silent using ADK</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/blog-header-image.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon/" target="_blank" rel="nofollow">Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Torch_Titan_Header_Image.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Integrating TorchTPU into TorchTitan and Optimizing Models for TPU" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/" target="_blank" rel="nofollow">Integrating TorchTPU into TorchTitan and Optimizing Models for TPU</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_8zpqf88zpq.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/bringing-visual-graph-debugging-to-custom-edge-compilers-with-model-explorer/" target="_blank" rel="nofollow">Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/bringing-visual-graph-debugging-to-custom-edge-compilers-with-model-explorer/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/inferenceblog.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Announcing New vLLM and SGLang Inference Engines on TPU" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/" target="_blank" rel="nofollow">Announcing New vLLM and SGLang Inference Engines on TPU</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/1_2.2e16d0ba.fill-1200x600.png" class="news-img" alt="Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/" target="_blank" rel="nofollow">Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_g9d0nag9d0.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Architecting Governed, Self-Evolving AI Agents on Google Cloud" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/" target="_blank" rel="nofollow">Architecting Governed, Self-Evolving AI Agents on Google Cloud</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Streaming_feature_in__API_Gateway.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/" target="_blank" rel="nofollow">Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/image_11_a479DBi.2e16d0ba.fill-1200x600.png" class="news-img" alt="Preview, edit, and collaborate on markdown (.md) files natively in Google Docs and Drive" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/" target="_blank" rel="nofollow">Preview, edit, and collaborate on markdown (.md) files natively in Google Docs and Drive</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/cui_banner_light_1600x900_1791294.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Building Conversational Commerce with Multi-Agent Swarms on GCP: A Working Prototype" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/building-conversational-commerce-with-multi-agent-swarms-on-gcp-a-working-prototype/" target="_blank" rel="nofollow">Building Conversational Commerce with Multi-Agent Swarms on GCP: A Working Prototype</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/building-conversational-commerce-with-multi-agent-swarms-on-gcp-a-working-prototype/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/00-header-1600x900.2e16d0ba.fill-1200x600.png" class="news-img" alt="Fast, reliable A2UI, with swappable inference formats" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/fast-reliable-a2ui/" target="_blank" rel="nofollow">Fast, reliable A2UI, with swappable inference formats</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/fast-reliable-a2ui/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/1_3.2e16d0ba.fill-1200x600.png" class="news-img" alt="Hill-Climbing Agent Quality with Agents CLI Evaluation" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/" target="_blank" rel="nofollow">Hill-Climbing Agent Quality with Agents CLI Evaluation</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/health-tech/walmart-taps-startup-general-medicine-expand-better-care-services" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/health-tech/walmart-taps-startup-general-medicine-expand-better-care-services&quot; hreflang=&quot;en&quot;&gt;Walmart taps startup General Medicine to expand Better Care Services&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.fiercehealthcare.com/health-tech/walmart-taps-startup-general-medicine-expand-better-care-services" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-1281725865%20%283%29%20%281%29.jpg?VersionId=dQzomw.fNZnvL.Et7DgG1a9PJ6F6SdGs" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/health-tech/medicare-navigation-startup-chapter-acquires-hively-build-out-community-platform-older&quot; hreflang=&quot;en&quot;&gt;Chapter acquires Hively with ambitions to be the one-stop shop for retirement&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>28 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/health-tech/medicare-navigation-startup-chapter-acquires-hively-build-out-community-platform-older" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/health-tech/medicare-navigation-startup-chapter-acquires-hively-build-out-community-platform-older&quot; hreflang=&quot;en&quot;&gt;Chapter acquires Hively with ambitions to be the one-stop shop for retirement&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">Chapter acquires Hively with ambitions to be the one-stop shop for retirement&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy&quot;&gt;...</p>
+            <a href="https://www.fiercehealthcare.com/health-tech/medicare-navigation-startup-chapter-acquires-hively-build-out-community-platform-older" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/fierce_15_1.png?VersionId=i6GWT56S2gIhIgQRAecivISWvxUnbObh" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/digital-health/connecting-dots-improve-pediatric-developmental-care&quot; hreflang=&quot;en&quot;&gt;Connecting the dots to improve pediatric developmental care&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>28 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/digital-health/connecting-dots-improve-pediatric-developmental-care" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/digital-health/connecting-dots-improve-pediatric-developmental-care&quot; hreflang=&quot;en&quot;&gt;Connecting the dots to improve pediatric developmental care&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">Connecting the dots to improve pediatric developmental care&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy&quot;&gt;                  ...</p>
+            <a href="https://www.fiercehealthcare.com/digital-health/connecting-dots-improve-pediatric-developmental-care" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-2232514171.jpg?VersionId=VwvVk9PfSFHEStjWC3XS9.q9WGuNS0P1" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/payers/look-how-employers-are-approaching-ai-enabled-benefits-solutions&quot; hreflang=&quot;en&quot;&gt;A look at how employers are approaching AI-enabled benefits solutions&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>28 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/payers/look-how-employers-are-approaching-ai-enabled-benefits-solutions" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/payers/look-how-employers-are-approaching-ai-enabled-benefits-solutions&quot; hreflang=&quot;en&quot;&gt;A look at how employers are approaching AI-enabled benefits solutions&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">A look at how employers are approaching AI-enabled benefits solutions&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy&quot;&gt;        ...</p>
+            <a href="https://www.fiercehealthcare.com/payers/look-how-employers-are-approaching-ai-enabled-benefits-solutions" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/namd.jpg?VersionId=HvuYN_B63_NVAj4o9QuCgHROMMfW7aF8" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/payers/work-requirements-state-directed-payments-front-and-center-namd-2026&quot; hreflang=&quot;en&quot;&gt;‘This is not a normal build’: States race to implement H.R. 1 Medicaid changes&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>27 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/payers/work-requirements-state-directed-payments-front-and-center-namd-2026" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/payers/work-requirements-state-directed-payments-front-and-center-namd-2026&quot; hreflang=&quot;en&quot;&gt;‘This is not a normal build’: States race to implement H.R. 1 Medicaid changes&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">‘This is not a normal build’: States race to implement H.R. 1 Medicaid changes&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy&quot;...</p>
+            <a href="https://www.fiercehealthcare.com/payers/work-requirements-state-directed-payments-front-and-center-namd-2026" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-2162804075.jpg?VersionId=ezuHjvVhLzZWO7Er6pqli4gbU.sfm1O2" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/providers/chutes-ladders-2026-hires-departures-firings-retirements-ceo-executives-healthcare&quot; hreflang=&quot;en&quot;&gt;Chutes &amp;amp; Ladders—HATCo CEO steps down; CDC deputy director resigns&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>27 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/providers/chutes-ladders-2026-hires-departures-firings-retirements-ceo-executives-healthcare" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/providers/chutes-ladders-2026-hires-departures-firings-retirements-ceo-executives-healthcare&quot; hreflang=&quot;en&quot;&gt;Chutes &amp;amp; Ladders—HATCo CEO steps down; CDC deputy director resigns&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">Chutes &amp;amp; Ladders—HATCo CEO steps down; CDC deputy director resigns&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy&quot;&gt;       ...</p>
+            <a href="https://www.fiercehealthcare.com/providers/chutes-ladders-2026-hires-departures-firings-retirements-ceo-executives-healthcare" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/ut_dmc_rendering_1.jpg?VersionId=ipR9dxmEbapX6RJmPIKHwO084YfVjNe." class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/health-tech/university-texas-austin-unveils-new-academic-health-system-it-builds-ai-native-hospital&quot; hreflang=&quot;en&quot;&gt;UT Austin unveils UT Dell Medicine as it bets big on new AI-native hospital&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>27 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/health-tech/university-texas-austin-unveils-new-academic-health-system-it-builds-ai-native-hospital" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/health-tech/university-texas-austin-unveils-new-academic-health-system-it-builds-ai-native-hospital&quot; hreflang=&quot;en&quot;&gt;UT Austin unveils UT Dell Medicine as it bets big on new AI-native hospital&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">UT Austin unveils UT Dell Medicine as it bets big on new AI-native hospital&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy&quot;&gt;  ...</p>
+            <a href="https://www.fiercehealthcare.com/health-tech/university-texas-austin-unveils-new-academic-health-system-it-builds-ai-native-hospital" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-2207160096%20%281%29.jpg?VersionId=ClXjsEgney3C9tyHyHG6uzOXqr_Ae3g0" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/finance/vera-health-secures-285m-series-ai-driven-clinical-search-engine&quot; hreflang=&quot;en&quot;&gt;Vera Health secures $28.5M series A for AI-driven clinical search engine&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>27 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/finance/vera-health-secures-285m-series-ai-driven-clinical-search-engine" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/finance/vera-health-secures-285m-series-ai-driven-clinical-search-engine&quot; hreflang=&quot;en&quot;&gt;Vera Health secures $28.5M series A for AI-driven clinical search engine&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">Vera Health secures $28.5M series A for AI-driven clinical search engine&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy&quot;&gt;     ...</p>
+            <a href="https://www.fiercehealthcare.com/finance/vera-health-secures-285m-series-ai-driven-clinical-search-engine" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/fiercehealthcare/1635360990/UnitedHealthcare_sign.jpg/UnitedHealthcare_sign.jpg?VersionId=mRAMc4oGgCt6.6zJw_PKJwe2kXPjRXqW" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/payers/unitedhealthcare-expands-ai-companion-avery-21m-members&quot; hreflang=&quot;en&quot;&gt;UnitedHealthcare expands AI companion Avery to 21M members&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>26 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/payers/unitedhealthcare-expands-ai-companion-avery-21m-members" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/payers/unitedhealthcare-expands-ai-companion-avery-21m-members&quot; hreflang=&quot;en&quot;&gt;UnitedHealthcare expands AI companion Avery to 21M members&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">UnitedHealthcare expands AI companion Avery to 21M members&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy&quot;&gt;                   ...</p>
+            <a href="https://www.fiercehealthcare.com/payers/unitedhealthcare-expands-ai-companion-avery-21m-members" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/cybersecurity_11.jpg?VersionId=FWCm4RBUTIvLY4oVKv0WMTpQIGKb5RUj" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/providers/south-carolinas-rural-hospitals-receiving-free-cyber-support-under-pilot-program&quot; hreflang=&quot;en&quot;&gt;South Carolina&#x27;s rural hospitals receive free cyber support under pilot program&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>26 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/providers/south-carolinas-rural-hospitals-receiving-free-cyber-support-under-pilot-program" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/providers/south-carolinas-rural-hospitals-receiving-free-cyber-support-under-pilot-program&quot; hreflang=&quot;en&quot;&gt;South Carolina&#x27;s rural hospitals receive free cyber support under pilot program&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">South Carolina&#x27;s rural hospitals receive free cyber support under pilot program&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy...</p>
+            <a href="https://www.fiercehealthcare.com/providers/south-carolinas-rural-hospitals-receiving-free-cyber-support-under-pilot-program" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/fiercehealthcare/1642524655/GettyImages-917306660.jpg/GettyImages-917306660.jpg?VersionId=C89pFsYwSA9xCinl7AetuAF99waygl8z" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/regulatory/hhs-finalizes-hti-5-rule-streamline-onc-health-it-certification-and-cut-compliance-costs&quot; hreflang=&quot;en&quot;&gt;HHS finalizes rule to ease health IT certification requirements but punts info blocking proposals&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>26 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/regulatory/hhs-finalizes-hti-5-rule-streamline-onc-health-it-certification-and-cut-compliance-costs" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/regulatory/hhs-finalizes-hti-5-rule-streamline-onc-health-it-certification-and-cut-compliance-costs&quot; hreflang=&quot;en&quot;&gt;HHS finalizes rule to ease health IT certification requirements but punts info blocking proposals&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">HHS finalizes rule to ease health IT certification requirements but punts info blocking proposals&quot; style=&quot;max-width:100%; height:auto; border-radius:8...</p>
+            <a href="https://www.fiercehealthcare.com/regulatory/hhs-finalizes-hti-5-rule-streamline-onc-health-it-certification-and-cut-compliance-costs" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2242817371_facebook_1200x630-1200x628.jpg" class="news-img" alt="This Is How Fast You Should Walk to Help Lower Your Risk of Death" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>26 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/walking-speed-daily-steps-may-predict-death-risk" target="_blank" rel="nofollow">This Is How Fast You Should Walk to Help Lower Your Risk of Death</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/walking-speed-daily-steps-may-predict-death-risk" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://qtxasset.com/quartz/qcloud5/media/image/fiercehealthcare/1519319265/BWH_BridgeInside_JK.jpg/BWH_BridgeInside_JK.jpg?VersionId=3SBKne8ZxHQO3BAfVocTyBYkVWebad8E" class="news-img" alt="&lt;a href=&quot;https://www.fiercehealthcare.com/providers/brigham-and-womens-nurses-authorize-open-ended-strike&quot; hreflang=&quot;en&quot;&gt;After postponing strike, Brigham and Women&#x27;s nurses reject contract proposal&lt;/a&gt;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>26 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.fiercehealthcare.com/providers/brigham-and-womens-nurses-authorize-open-ended-strike" target="_blank" rel="nofollow">&lt;a href=&quot;https://www.fiercehealthcare.com/providers/brigham-and-womens-nurses-authorize-open-ended-strike&quot; hreflang=&quot;en&quot;&gt;After postponing strike, Brigham and Women&#x27;s nurses reject contract proposal&lt;/a&gt;</a></h2>
+            <p class="news-excerpt">After postponing strike, Brigham and Women&#x27;s nurses reject contract proposal&quot; style=&quot;max-width:100%; height:auto; border-radius:8px;&quot; loading=&quot;lazy&quot;&gt; ...</p>
+            <a href="https://www.fiercehealthcare.com/providers/brigham-and-womens-nurses-authorize-open-ended-strike" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2230865520_facebook_1200x630-1200x628.jpg" class="news-img" alt="Letter from the Editor-in-Chief: What Breast Cancer Patients Need When Treatment Ends" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>16 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/breast-cancer-awareness-what-patients-need-when-treatment-ends" target="_blank" rel="nofollow">Letter from the Editor-in-Chief: What Breast Cancer Patients Need When Treatment Ends</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/breast-cancer-awareness-what-patients-need-when-treatment-ends" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2150019643_facebook_1200x630-1200x628.jpg" class="news-img" alt="Wellness Apps, Medically Tailored Meals Help Slow Weight Gain After GLP-1s" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>09 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/wellness-apps-medically-tailored-meals-slow-weight-gain-after-glp-1s" target="_blank" rel="nofollow">Wellness Apps, Medically Tailored Meals Help Slow Weight Gain After GLP-1s</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/wellness-apps-medically-tailored-meals-slow-weight-gain-after-glp-1s" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2207771531_facebook_1200x630-1200x628.jpg" class="news-img" alt="Can the BPC-157 ‘Wolverine’ Peptide Really Help With Pain and Recovery?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>04 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/bpc-157-wolverine-peptide-help-pain-recovery" target="_blank" rel="nofollow">Can the BPC-157 ‘Wolverine’ Peptide Really Help With Pain and Recovery?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/bpc-157-wolverine-peptide-help-pain-recovery" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/10/getty_2252000801_facebook_1200x630-1200x628.jpg" class="news-img" alt="Letter From the Editor-in-Chief: Is Worrying About Sleep Keeping Us Awake?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>02 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/sleep-study-parenthood-letter-from-eic-column" target="_blank" rel="nofollow">Letter From the Editor-in-Chief: Is Worrying About Sleep Keeping Us Awake?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/sleep-study-parenthood-letter-from-eic-column" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2026/09/HL-Awards-News-Story-732x549-A.png" class="news-img" alt="Fullspan Health Announces First-Ever 2026 Healthline Awards" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Sep 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.healthline.com/health-news/2026-healthline-awards-fullspan-health" target="_blank" rel="nofollow">Fullspan Health Announces First-Ever 2026 Healthline Awards</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.healthline.com/health-news/2026-healthline-awards-fullspan-health" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://assets.greatist.com/content/gr8_sharing.jpg" class="news-img" alt="noom med epm | GLP-1RX Program" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>13 Mar 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/noom-rx" target="_blank" rel="nofollow">noom med epm | GLP-1RX Program</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/noom-rx" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/08/GRT-female-hair-looking-in-bathroom-mirror-hand-on-neck-1200x628-facebook-1.jpg" class="news-img" alt="Text Neck Exercises: Simple Moves to Ease Digital Strain" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>31 Aug 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/text-neck-exercises" target="_blank" rel="nofollow">Text Neck Exercises: Simple Moves to Ease Digital Strain</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/text-neck-exercises" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/07/Astrology_Female_Shirt-1200x628-Facebook.jpg" class="news-img" alt="How to Calculate Your Rising and Moon Sign: A Beginner’s Guide" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>02 Aug 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/discover/moon-and-rising-sign" target="_blank" rel="nofollow">How to Calculate Your Rising and Moon Sign: A Beginner’s Guide</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/discover/moon-and-rising-sign" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/06/636273-Tangerines-1200x628-Facebook.jpg" class="news-img" alt="Are Tangerines Good for You? 5 Health Benefits You Might Love" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>26 Jun 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/are-tangerines-good-for-you" target="_blank" rel="nofollow">Are Tangerines Good for You? 5 Health Benefits You Might Love</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/are-tangerines-good-for-you" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2024/05/635455-I-Got-the-Power-Your-Guide-to-Strength-Tattoos-1200x628-Facebook.jpg" class="news-img" alt="Tattoo Meaning Strength: Designs That May Empower You" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>09 Jun 2024</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/discover/strength-tattoos" target="_blank" rel="nofollow">Tattoo Meaning Strength: Designs That May Empower You</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/discover/strength-tattoos" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://media.cnn.com/api/v1/images/stellar/prod/230401001207-01-pinduoduo-app-092022-restricted.jpg?c=16x9&amp;q=w_800,c_fill" class="news-img" alt="Hundreds of millions at risk from Chinese shopping app malware" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>02 Apr 2023</span>
+            </div>
+            <h2 class="news-title"><a href="https://cnn.it/40OSomK" target="_blank" rel="nofollow">Hundreds of millions at risk from Chinese shopping app malware</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://cnn.it/40OSomK" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article></div><footer>&copy; 2026 News Portal. All rights reserved.</footer>
+</div></body></html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<title>Latest News</title>
+<meta name="description" content="Latest news page 1">
+<link rel="canonical" href="https://thenewsday112.github.io/newsmenuday/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+* { box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--bg-color); margin: 0; padding: 0; color: var(--text-main); line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+header.site-header { background: var(--card-bg); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-size: 24px; font-weight: 800; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+nav.category-nav { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; scrollbar-width: none; }
+nav.category-nav::-webkit-scrollbar { display: none; }
+nav.category-nav a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 20px; white-space: nowrap; transition: all 0.2s; background: var(--bg-color); }
+nav.category-nav a:hover, nav.category-nav a.active { background: var(--primary); color: white; }
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-top: 20px; }
+.news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; border: 1px solid var(--border-color); }
+.news-card:hover { transform: translateY(-4px); box-shadow: 0 12px 20px -5px rgba(0,0,0,0.1); }
+.news-img { width: 100%; height: 180px; object-fit: cover; background: #e2e8f0; display: block; }
+.news-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+.news-meta { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 600; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.badge { background: #eff6ff; color: var(--primary); padding: 4px 10px; border-radius: 20px; }
+.news-title { margin: 0 0 12px 0; font-size: 18px; font-weight: 800; line-height: 1.4; }
+.news-title a { color: var(--text-main); text-decoration: none; }
+.news-title a:hover { color: var(--primary); }
+.news-excerpt { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.read-more { margin-top: auto; font-size: 14px; font-weight: 600; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+.read-more:hover { color: var(--primary-dark); }
+.pagination { display: flex; justify-content: center; gap: 8px; margin: 40px 0; flex-wrap: wrap; }
+.pagination a { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; height: 40px; padding: 0 10px; border-radius: 8px; background: var(--card-bg); color: var(--text-main); text-decoration: none; font-weight: 600; border: 1px solid var(--border-color); transition: all 0.2s; }
+.pagination a:hover, .pagination a.active { background: var(--primary); color: white; border-color: var(--primary); }
+.ad-container { background: var(--card-bg); padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 20px; border: 1px solid var(--border-color); }
+footer { text-align: center; padding: 40px 20px; color: var(--text-muted); border-top: 1px solid var(--border-color); margin-top: 40px; background: var(--card-bg); }
+@media (max-width: 768px) { .header-inner { flex-direction: column; align-items: flex-start; gap: 15px; } nav.category-nav { width: 100%; } }
+</style>
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">📰 News Portal</a>
+    </div>
+    <div class="header-inner" style="padding-top:0;">
+        <nav class="category-nav"><a href="index.html" class="active">All News</a><a href="technology.html" class="">Technology</a><a href="business.html" class="">Business</a><a href="sports.html" class="">Sports</a><a href="entertainment.html" class="">Entertainment</a><a href="health.html" class="">Health</a><a href="other.html" class="">Other</a></nav>
+    </div>
+</header>
+<div class="container">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;"><h1 style="font-size:28px; font-weight:800; margin:0;">Latest News</h1></div><div class="ad-container">
+<div style="text-align:center;margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+</div><div class="news-grid">
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_c5igf5c5ig.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="ML Drift: Next-Gen GPU AI/ML Inference at the Edge" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/ml-drift-next-gen-gpu-aiml-inference-at-the-edge/" target="_blank" rel="nofollow">ML Drift: Next-Gen GPU AI/ML Inference at the Edge</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/ml-drift-next-gen-gpu-aiml-inference-at-the-edge/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/argon__robotics__hero.2e16d0ba.fill-1200x600.png" class="news-img" alt="Gemini 4 Argon for Robotics" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/gemini-4-argon-for-robotics/" target="_blank" rel="nofollow">Gemini 4 Argon for Robotics</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/gemini-4-argon-for-robotics/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_le2f6yle2f.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon/" target="_blank" rel="nofollow">Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_bib6g3bib6.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster/" target="_blank" rel="nofollow">Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_s1iz7fs1iz.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Announcing DPoP Support for Google OAuth: Securing Refresh Tokens" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/announcing-dpop-support-for-google-oauth-securing-refresh-tokens/" target="_blank" rel="nofollow">Announcing DPoP Support for Google OAuth: Securing Refresh Tokens</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/announcing-dpop-support-for-google-oauth-securing-refresh-tokens/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/clogged-ear-remedy" target="_blank" rel="nofollow">Say What? 7 Tips to Unclog Your Blocked Ears</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/clogged-ear-remedy" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/evaluating-ai-agents-banner-1600x.2e16d0ba.fill-1200x600.png" class="news-img" alt="Evaluating AI agents: moving past the vibe check" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/" target="_blank" rel="nofollow">Evaluating AI agents: moving past the vibe check</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/1_1.2e16d0ba.fill-1200x600.png" class="news-img" alt="Three layers, one repo: a tour of google/adk-recipes" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/three-layers-one-repo-a-tour-of-googleadk-recipes/" target="_blank" rel="nofollow">Three layers, one repo: a tour of google/adk-recipes</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/three-layers-one-repo-a-tour-of-googleadk-recipes/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_bguxwvbgux.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Native Model Authoring for Edge with LiteRT Tensor API" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/native-model-authoring-for-edge-with-litert-tensor-api/" target="_blank" rel="nofollow">Native Model Authoring for Edge with LiteRT Tensor API</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/native-model-authoring-for-edge-with-litert-tensor-api/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">BUSINESS</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/discover/undercut-women" target="_blank" rel="nofollow">Undercuts for Women: Benefits, Styles, and Types</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/discover/undercut-women" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/option4_minimal_flow_diagram_1600.2e16d0ba.fill-1200x600.png" class="news-img" alt="Step by Step guide: Build a Voice Agent That Never Goes Silent using ADK" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk/" target="_blank" rel="nofollow">Step by Step guide: Build a Voice Agent That Never Goes Silent using ADK</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/hickey-stages" target="_blank" rel="nofollow">Hickey Stages: Understanding and Managing Love Bites Effectively</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/hickey-stages" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/healthy/how-to-get-rid-of-mosquito-bites-overnight" target="_blank" rel="nofollow">Bye-Bye Bites: 14 Ways to Get Rid of Mosquito Bites Overnight</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/healthy/how-to-get-rid-of-mosquito-bites-overnight" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/blog-header-image.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon/" target="_blank" rel="nofollow">Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Torch_Titan_Header_Image.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Integrating TorchTPU into TorchTitan and Optimizing Models for TPU" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/" target="_blank" rel="nofollow">Integrating TorchTPU into TorchTitan and Optimizing Models for TPU</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_8zpqf88zpq.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/bringing-visual-graph-debugging-to-custom-edge-compilers-with-model-explorer/" target="_blank" rel="nofollow">Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/bringing-visual-graph-debugging-to-custom-edge-compilers-with-model-explorer/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/inferenceblog.2e16d0ba.fill-1200x600.jpg" class="news-img" alt="Announcing New vLLM and SGLang Inference Engines on TPU" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/" target="_blank" rel="nofollow">Announcing New vLLM and SGLang Inference Engines on TPU</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/how-to-heal-cracked-lip-corners-fast" target="_blank" rel="nofollow">Pucker Up! How to Heal Cracked Lip Corners Fast</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/how-to-heal-cracked-lip-corners-fast" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/1_2.2e16d0ba.fill-1200x600.png" class="news-img" alt="Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">TECHNOLOGY</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/" target="_blank" rel="nofollow">Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>29 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://greatist.com/health/dark-green-poop" target="_blank" rel="nofollow">What Does Dark Green Poop Mean? Causes, Diet, and When to See a Doctor</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://greatist.com/health/dark-green-poop" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article></div><div class="pagination"><a href="index.html" class="active">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a></div><footer>&copy; 2026 News Portal. All rights reserved.</footer>
+</div></body></html>
